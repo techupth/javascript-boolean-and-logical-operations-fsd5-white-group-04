@@ -1,12 +1,21 @@
 // Exercise #2: Promotion Conditions
+let lastMonthPaidMoreThan4000 = true;
+let isWeekday = true;
+let hasBoughtProductFromITCategory = false;
+let hasAttendedDiscountEvent = false;
+let isPlatinum = true;
 
-// Start coding here
-let lastMonthPaidMoreThan4000;
-let isWeekday;
-let hasBoughtProductFromITCategory;
-let hasAttendedDiscountEvent;
-let isPlatinum;
+let hasPromotion =
+  (lastMonthPaidMoreThan4000 &&
+    isWeekday &&
+    !hasBoughtProductFromITCategory &&
+    !hasAttendedDiscountEvent) ||
+  isPlatinum;
 
-let hasPromotion;
-
+let john =
+  lastMonthPaidMoreThan4000 &&
+  isWeekday &&
+  !hasBoughtProductFromITCategory &&
+  !hasAttendedDiscountEvent;
 console.log(hasPromotion);
+console.log(john);
